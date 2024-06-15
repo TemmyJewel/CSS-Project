@@ -68,7 +68,7 @@
                 <!-- It's also divided into two divs -->
 
                 <div class="about-1">
-                    <h1 class="sub-title">Who am I</h1>
+                    <h1 class="sub-title">Who Am I?</h1>
                     <img src="Sure.gif" alt="Working"> 
                     
                 </div>
@@ -77,7 +77,7 @@
                 
                 <div class="about-2">
                    
-                    <p>To define a person is almost impossible. <br>Each of us has our  unique thoughts and behaviours <br> But I would try to make you understand me<br> In simple words, I love creating.</p>
+                    <p>I'm a web developer in training. <br>I'm learning how to fully integrate html, css and javascript in a web page <br>Below are some of my skills, education and experience</p>
                     
                     <table>
                         <tr>
@@ -87,19 +87,19 @@
                         </tr>
                         
                         <tr>
-                            <td>HTML</td>
+                            <td>HTML <i class="fa-brands fa-html5"></i></td>
                             <td>Coding for <br>1 year plus</td>
                             <td>Gomycode Web <br>Dev Training</td>
                         </tr>
 
                         <tr>
-                            <td>Css</td>
+                            <td>Css <i class="fa-brands fa-css3-alt"></i></td>
                             <td> </td>
                             <td> </td>
                         </tr>
 
                         <tr>
-                            <td>JavaScript</td>
+                            <td>JavaScript <i class="fa-brands fa-js"></i></td>
                             <td>  </td>
                             <td> </td>
                         </tr>
@@ -115,20 +115,18 @@
                 <div class="container">
                 <!-- Heading -->
                 
-                <h1 class="sub-title"><bold>These are some of my works</bold></h1>
+                <h1 class="sub-title"><bold> My Works</bold></h1>
             
                 <div class="row">
                     <div class="project1  proj">
-                        <img src="Screenshot (12).png" alt="Prog">
-                        <h1>An Interactive Website Landing Page</h1>
-                    </div>
-                    
-                    
+                        <img src="Screenshot (13).png" alt="Prog">
+                        <div class="note"><h1>A Student Card</h1></div>
+                    </div>  
                   
 
                     <div class="project2 proj">
                         <img src="Screenshot (14).png">
-                        <h1>A digital work card</h1>
+                        <div class="note"><h1>A digital work card</h1></div>
                     </div>
                 
                 </div>
@@ -145,34 +143,32 @@
                  <!-- It has two divs; one for phone number and email, the other for a form-->
                  <!-- This is the Contact div-->
                  <div class="contact">
-                        <h1 class="sub-title">How to reach me</h1>
-                        
-                            <i class="fa-solid fa-phone"></i>
-                            <p>+2349061764433</p>
-                    
-                            <i class="fa-solid fa-paper-plane"></i>
-                            <p>temmyjewel@gmail.com</p>
-                    
+                        <h1 class="sub-title">How to Reach Me</h1>
+
+                        <p><i class="fa-solid fa-phone"></i>+2349061764433</p>
+                        <p><i class="fa-solid fa-paper-plane"></i>temmyjewel@gmail.com</p>
+
+                        <div class="social-icons">
+                            <a href="https://x.com/temmy_jewel?t=I9sVdVf8GkyW6TTmVnvRyg&s=09" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/temmy.jewel/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin" target="_blank"></i></a>
+                        </div>
                 
                     </div>
                 
 
                  <!-- This is the form section -->
                 <div class="send-message">
-                    <h1>You can send now</h1>
+                    <h2>You can send a note</h2>
                     <form>
-                        <input type ="text" name = "Name" placeholder="name">
-                        <br>
-                        <br>
-                        <input type ="email" name = "e-mail" placeholder="email">
-                        <br>
-                        <br>
+                        <input type ="text" name = "Name" placeholder="name" required>
+                        <input type ="email" name = "e-mail" placeholder="email" required>
                         
                         <label for="">What do you want to tell me?</label> <br>
                         <textarea rows="8" cols="50" placeholder= "What do you want to tell me?"> </textarea> 
                         <br>
                         <br>
-                        <button type="submit">Send</button>
+                        <button type="submit" class="btn btn1">Send</button>
                     </form>
                 </div>
             </div>
@@ -185,7 +181,9 @@
             <br>
              <!-- This is the resume section -->
             <section id="resume">
-                <button>Download Resume</button>
+                <div class="container">
+                    <a href="my-cv.pdf" download class="btn btn2">Download Resume</a>
+                </div>
             </section>
         </div>
 
@@ -196,7 +194,9 @@
         <br>
          <!-- This is the footer-->
         <footer>
-           <h3>Copyright @Temilade Ideas Brought to Life</h3>
+            <div class="container">
+           <h3>Copyright © Temilade Made with <i class="fa-solid fa-heart"></i></h3>
+            </div>
         </footer>
 </body>
 </html>

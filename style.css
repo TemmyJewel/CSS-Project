@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family: "Roboto";
 }
 
 body{
@@ -124,7 +124,7 @@ nav ul li a:hover::after{
 
 .sub-title{
     font-size: 50px;
-    color: #fff;
+    color: #3d79f2;
 }
 
 .about-sect{
@@ -150,17 +150,33 @@ nav ul li a:hover::after{
 }
 
 .about-2 p{
-    font-size: 22px;
+    font-size: 18px;
     margin-bottom: 25px;
+    line-height: 27px;
 }
 
-table{
-    
+.about-2 table{
+    width: 100%;
+    margin-top: 30px;
 }
 
-tr th, tr td{
-    width: 200px;
+table, th, td {
+    border: 1px solid #3d79f2;
 }
+
+  th{
+    padding: 20px;
+    transition: 0.25s;
+    cursor: pointer;
+  }
+
+  th:hover{
+    color: #77a0f2;
+  }
+
+  td{
+    padding: 15px;
+  }
 
 
 /* ................Work Section............. */
@@ -172,16 +188,43 @@ tr th, tr td{
 .row{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .proj{
     flex-basis: 42.5%;
-    margin: 0 15px;
+    margin: 30px 15px;
+    position: relative;
 }
 
 .proj img{
-    width: 100%;
-    overflow: hidden;
+    width: 300px;
+    border-radius: 15px;
+}
+
+.proj h1{
+    margin: 15px 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.proj .note{
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 300px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #3d79f2);
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.proj:hover .note{
+    display: flex;
 }
 
 /* ................Contact Section............. */
@@ -192,4 +235,84 @@ tr th, tr td{
 .info{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact h1{
+    margin-bottom: 20px;
+}
+
+.contact p{
+    padding: 25px 0;
+}
+
+.contact i{
+    font-size: 30px;
+    color: #fff;
+    margin-right: 30px;
+    transition: 0.25s;
+}
+
+.contact i:hover{
+    color: #3d79f2;
+    transform: translateY(-5px);
+}
+
+.social-icons{
+    padding-top: 15px;
+}
+
+.send-message h2{
+    margin: 20px 0;
+    font-size: 25px;
+}
+
+form input,form textarea{
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background: #262626;
+    color: #fff;
+}
+
+.btn1{
+    border: none;
+    width: 100px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* ...........resume............... */
+#resume a{
+    text-decoration: none;
+    color: #000;
+}
+
+.btn{
+   background-color: #3d79f2;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background-color: #0540f2;
+}
+
+/* ................footer............. */
+footer{
+    text-align: center;
+    background-color: #262626;
+    padding: 20px 0;
+}
+
+footer h3 {
+    font-size: 18px;
+}
+footer h3 i{
+    color:#3d79f2;
 }
