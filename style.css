@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background: #080808;
+    color: #fff;
+}
+
+
+/* ................Home Section............. */
+
+#home{
+    width: 100%;
+    height: 100vh;
+
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    margin-bottom: 5%;
+}
+
+nav .logo{
+    cursor: pointer;
+}
+
+nav .logo h1{
+    font-size: 50px;
+    color: #3d79f2;
+    margin-bottom: 12px;
+}
+
+nav .logo h1 span{
+    color: #fff;
+}
+
+nav .logo p{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: ' ';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: #3d79f2;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.welcome{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.home-text{
+    flex-basis: 50%;
+    line-height: 35px;
+}
+
+.home-text p{
+    font-size: 20px;
+    font-weight: 200;
+    margin: 15px 0;
+}
+
+.home-text h1{
+    font-size: 50px;
+    padding: 10px 0;
+}
+
+.home-text h1 span{
+    color: #3d79f2;
+}
+
+.home-img{
+    flex-basis: 45%;
+}
+
+
+.home-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* ................About Section............. */
+#about{
+    padding: 80px 0;
+    color: #ababab;
+    display: flex;
+}
+
+.sub-title{
+    font-size: 50px;
+    color: #fff;
+}
+
+.about-sect{
+    display: flex;
+
+}
+
+.about-1{
+    flex-basis: 45%;
+}
+
+.about-1 img{
+    width: 100%;
+    border-radius: 10px;
+    margin: 30px 0px;
+}
+
+.about-2{
+    flex-basis: 60%;
+    margin-left: 45px;
+    align-self: center;
+  
+}
+
+.about-2 p{
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+table{
+    
+}
+
+tr th, tr td{
+    width: 200px;
+}
+
+
+/* ................Work Section............. */
+
+#work{
+    padding: 30px 0;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.proj{
+    flex-basis: 42.5%;
+    margin: 0 15px;
+}
+
+.proj img{
+    width: 100%;
+    overflow: hidden;
+}
+
+/* ................Contact Section............. */
+#contacts{
+    padding: 30px 0;
+}
+
+.info{
+    display: flex;
+    flex-wrap: wrap;
+}
