@@ -248,19 +248,24 @@ table, th, td {
 
 .contact i{
     font-size: 30px;
-    color: #fff;
+    color: #3d79f2;
     margin-right: 30px;
     transition: 0.25s;
-}
-
-.contact i:hover{
-    color: #3d79f2;
-    transform: translateY(-5px);
 }
 
 .social-icons{
     padding-top: 15px;
 }
+.social-icons i{
+    color: #fff;
+}
+
+.social-icons i:hover{
+    color: #3d79f2;
+    transform: translateY(-5px);
+}
+
+
 
 .send-message h2{
     margin: 20px 0;
